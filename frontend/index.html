@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>ZKP Project</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+	
+</head>
+<body onload="initialize()">
+
+
+	<div class="container">
+
+		<div class="alert hide" id="alert">
+			<i class="bx my-bx bxs-error-circle"></i>
+			<span class="msg"></span>
+			<div class="close-btn">
+			   <i class="bx bx-x"></i>
+			</div>
+		 </div>
+	 
+
+		<div class="img">
+			<img src="img/bg.jpg">
+		</div>
+
+
+		<div class="login-content">
+			<form action="index.html" id="loginForm" autocomplete="off">
+
+				<img src="img/icons8-student-64.png" alt="">
+				<h2 class="title">eStud Survey</h2>
+
+           		<div class="input-div one" style="margin-top: 30px;">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input type="text" class="input" id="login_username">
+           		   </div>
+
+           		</div>
+
+				
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" class="input" id="login_password">
+            	   </div>
+            	</div>
+            	
+            	<input type="submit" class="btn" value="Login" style="margin-top: 50px;" onclick="login_function(event)">
+            </form>
+        </div>
+    </div>
+    <script type="module" src="js/main.js"></script>
+
+	
+</body>
+</html>
