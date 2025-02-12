@@ -58,7 +58,7 @@ app.post("/submit-survey", async (req, res) => {
         if (isValid) {
 
             const nulifier = ZKP.nullifier;
-            console.log(`${nullifiers[ZKP.scope]}`);
+            //console.log(`${nullifiers[ZKP.scope]}`);
     
             if(!nullifiers[ZKP.scope]){
                 nullifiers[ZKP.scope]=[];
